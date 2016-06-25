@@ -1,0 +1,6 @@
+button($colour) {
+  background-color: $colour;
+  border: none;
+  font-size: rem(14px);
+  text-transform: uppercase;
+}

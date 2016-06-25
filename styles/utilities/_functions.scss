@@ -1,0 +1,5 @@
+@function rem($size) {
+  //Default font size on html element is 100%, equivalent to 16px;
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}

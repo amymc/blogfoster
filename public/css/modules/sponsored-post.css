@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box; }
+
+.button, .sponsored-post__clipboard-button, .sponsored-post__button {
+  background-color: #AA4472;
+  border: none;
+  font-size: rem(14px);
+  text-transform: uppercase; }
+
+.clearfix:after, .sponsored-post__step:after, .sponsored-post__step-task:after, .sponsored-post__checkbox:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.sponsored-post {
+  font-family: 'Helvetica Neue', Arial, Sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #3A114F, #B43465);
+  padding: rem(24px) rem(30px); }
+  .sponsored-post__title {
+    margin: 0 0 rem(26px) 0;
+    font-size: rem(28px);
+    line-height: rem(30px); }
+  .sponsored-post__icon {
+    float: left;
+    width: rem(18px);
+    height: rem(18px); }
+    .sponsored-post__icon--offset {
+      margin-top: rem(10px); }
+  .sponsored-post__info-wrapper {
+    float: left;
+    width: 50%;
+    margin-bottom: rem(30px); }
+  .sponsored-post__campaign-image {
+    float: right;
+    margin-bottom: rem(30px); }
+  .sponsored-post__info {
+    overflow: hidden;
+    margin-bottom: rem(20px); }
+  .sponsored-post__info-title-wrapper {
+    float: left;
+    margin-left: rem(11px); }
+  .sponsored-post__info-title {
+    display: block;
+    font-size: rem(28px);
+    line-height: rem(30px); }
+  .sponsored-post__info-subtitle {
+    display: block;
+    font-size: rem(16px);
+    line-height: rem(20px);
+    opacity: 0.5; }
+  .sponsored-post__section {
+    clear: both; }
+  .sponsored-post__section-title-wrapper {
+    height: rem(60px);
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797; }
+  .sponsored-post__section-title {
+    float: left;
+    font-size: rem(20px);
+    line-height: rem(60px);
+    color: #fff;
+    opacity: 0.5; }
+  .sponsored-post__step {
+    display: block;
+    clear: both;
+    font-size: rem(16px); }
+  .sponsored-post__step-icon-wrapper {
+    position: relative;
+    float: left;
+    width: rem(40px);
+    height: rem(40px);
+    margin: rem(10px) 0; }
+  .sponsored-post__step-icon {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    bottom: 0;
+    width: rem(18px); }
+    .sponsored-post__step-icon--stream {
+      top: 0;
+      left: 0;
+      width: rem(40px); }
+  .sponsored-post__step-inner-wrapper {
+    float: left;
+    position: relative;
+    margin: rem(11px) 0 rem(15px) rem(20px);
+    width: calc(100% - 60px); }
+    .sponsored-post__step-inner-wrapper:before {
+      content: '';
+      position: absolute;
+      left: rem(-41px);
+      border: 1.5px solid white;
+      opacity: 0.3;
+      width: 0;
+      height: calc(100% - rem(26px));
+      top: rem(44px); }
+    .sponsored-post__step-inner-wrapper:after {
+      content: '';
+      position: absolute;
+      left: rem(-40px);
+      border: 1.5px solid white;
+      opacity: 0.05;
+      width: calc(100% + rem(40px));
+      bottom: rem(-14px); }
+    .sponsored-post__step-inner-wrapper--wide:before {
+      height: calc(100% - rem(33px)); }
+    .sponsored-post__step-inner-wrapper--wide:after {
+      left: rem(-61px);
+      width: calc(100% + rem(60px)); }
+    .sponsored-post__step-inner-wrapper--wide:before {
+      height: calc(100% - rem(33px)); }
+    .sponsored-post__step-inner-wrapper--wide:after {
+      left: rem(-61px);
+      width: calc(100% + rem(60px)); }
+    .sponsored-post__step-inner-wrapper--last:before {
+      border: none; }
+    .sponsored-post__step-inner-wrapper--last:after {
+      left: rem(-61px);
+      width: calc(100% + rem(60px)); }
+  .sponsored-post__step-metadata {
+    display: block;
+    font-size: rem(14px);
+    line-height: rem(20px);
+    color: #fff;
+    opacity: 0.3; }
+  .sponsored-post__step-task {
+    display: inline-block;
+    font-size: rem(16px);
+    line-height: rem(18px); }
+  .sponsored-post__step-task-item {
+    float: left;
+    width: calc(100% - rem(30px)); }
+  .sponsored-post__step-task-wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: rem(15px); }
+  .sponsored-post__step-result {
+    font-size: rem(16px);
+    line-height: rem(18px);
+    opacity: 0.5;
+    margin-left: rem(8px); }
+  .sponsored-post__step-superscript {
+    float: right;
+    opacity: 0.3; }
+  .sponsored-post__step-superscript-text {
+    margin-left: rem(6px); }
+  .sponsored-post__clipboard-wrapper {
+    position: relative;
+    margin-top: rem(15px); }
+  .sponsored-post__clipboard {
+    background-color: #691F54;
+    width: calc(100% - 195px);
+    padding: rem(14px) rem(12px);
+    border: 1px solid #903D6D;
+    border-top-left-radius: rem(3px);
+    border-bottom-left-radius: rem(3px);
+    overflow: hidden; }
+  .sponsored-post__clipboard-text {
+    display: block;
+    opacity: 0.3;
+    white-space: nowrap; }
+    .sponsored-post__clipboard-text--indented {
+      margin-left: rem(28px); }
+  .sponsored-post__clipboard-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: rem(194px);
+    border-top-right-radius: rem(3px);
+    border-bottom-right-radius: rem(3px);
+    padding: 0 rem(34px); }
+  .sponsored-post__button {
+    display: block;
+    clear: both;
+    width: rem(125px);
+    height: rem(40px);
+    border-radius: rem(3px); }
+    .sponsored-post__button--disabled {
+      background-color: #833559; }
+  .sponsored-post__button-text {
+    color: #fff;
+    opacity: 0.5; }
+    .sponsored-post__button-text--disabled {
+      opacity: 0.3; }
+  .sponsored-post__checkbox {
+    float: left; }
+  .sponsored-post__checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: rem(20px);
+    height: rem(20px); }
+  .sponsored-post__checkbox-label {
+    display: inline-block;
+    margin: 0 rem(10px) 0 0; }
+  .sponsored-post__checkbox-label:before, .sponsored-post__checkbox-input {
+    content: '';
+    background-image: url("../images/icon_checkbox.png");
+    background-position: 20px 0px;
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px); }
+  .sponsored-post__checkbox-input:checked + .sponsored-post__checkbox-label:before {
+    background-position: 0px 0px; }
+
+.icon--arrow {
+  float: right;
+  height: rem(9px);
+  margin: rem(26px) 0 rem(24px) 0; }
+
+.icon-checkbox {
+  outline: 1px solid #1e5180; }

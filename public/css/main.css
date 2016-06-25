@@ -1,0 +1,260 @@
+.button, .sponsored-post__clipboard-button, .sponsored-post__button {
+  background-color: #AA4472;
+  border: none;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
+
+.clearfix:after, .sponsored-post__step:after, .sponsored-post__step-task:after, .sponsored-post__checkbox:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Eric Meyer's CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   This is a Sass partial
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.sponsored-post {
+  font-family: 'Helvetica Neue', Arial, Sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #3A114F, #B43465);
+  padding: 1.5rem 1.875rem; }
+  .sponsored-post__title {
+    margin: 0 0 1.625rem 0;
+    font-size: 1.75rem;
+    line-height: 1.875rem; }
+  .sponsored-post__icon {
+    float: left;
+    width: 1.125rem;
+    height: 1.125rem; }
+    .sponsored-post__icon--offset {
+      margin-top: 0.625rem; }
+  .sponsored-post__info-wrapper {
+    float: left;
+    width: 50%;
+    margin-bottom: 1.875rem; }
+  .sponsored-post__campaign-image {
+    float: right;
+    margin-bottom: 1.875rem; }
+  .sponsored-post__info {
+    overflow: hidden;
+    margin-bottom: 1.25rem; }
+  .sponsored-post__info-title-wrapper {
+    float: left;
+    margin-left: 0.6875rem; }
+  .sponsored-post__info-title {
+    display: block;
+    font-size: 1.75rem;
+    line-height: 1.875rem; }
+  .sponsored-post__info-subtitle {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    opacity: 0.5; }
+  .sponsored-post__section {
+    clear: both; }
+  .sponsored-post__section-title-wrapper {
+    height: 3.75rem;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797; }
+  .sponsored-post__section-title {
+    float: left;
+    font-size: 1.25rem;
+    line-height: 3.75rem;
+    color: #fff;
+    opacity: 0.5; }
+  .sponsored-post__step {
+    display: block;
+    clear: both;
+    font-size: 1rem; }
+  .sponsored-post__step-icon-wrapper {
+    position: relative;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.625rem 0; }
+  .sponsored-post__step-icon {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    bottom: 0;
+    width: 1.125rem; }
+    .sponsored-post__step-icon--stream {
+      top: 0;
+      left: 0;
+      width: 2.5rem; }
+  .sponsored-post__step-inner-wrapper {
+    float: left;
+    position: relative;
+    margin: 0.6875rem 0 0.9375rem 1.25rem;
+    width: calc(100% - 60px); }
+    .sponsored-post__step-inner-wrapper:before {
+      content: '';
+      position: absolute;
+      left: -2.5625rem;
+      border: 1.5px solid #fff;
+      opacity: 0.3;
+      width: 0;
+      height: calc(100% - 1.625rem);
+      top: 2.75rem; }
+    .sponsored-post__step-inner-wrapper:after {
+      content: '';
+      position: absolute;
+      left: -2.5rem;
+      border: 1.5px solid #fff;
+      opacity: 0.05;
+      width: calc(100% + 2.5rem);
+      bottom: -0.875rem; }
+    .sponsored-post__step-inner-wrapper--wide:before {
+      height: calc(100% - 2.0625rem); }
+    .sponsored-post__step-inner-wrapper--wide:after {
+      left: -3.8125rem;
+      width: calc(100% + 3.75rem); }
+    .sponsored-post__step-inner-wrapper--wide:before {
+      height: calc(100% - 2.0625rem); }
+    .sponsored-post__step-inner-wrapper--wide:after {
+      left: -3.8125rem;
+      width: calc(100% + 3.75rem); }
+    .sponsored-post__step-inner-wrapper--last:before {
+      border: none; }
+    .sponsored-post__step-inner-wrapper--last:after {
+      left: -3.8125rem;
+      width: calc(100% + 3.75rem); }
+  .sponsored-post__step-metadata {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #fff;
+    opacity: 0.3; }
+  .sponsored-post__step-task {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.125rem; }
+  .sponsored-post__step-task-item {
+    float: left;
+    width: calc(100% - 1.875rem); }
+  .sponsored-post__step-task-wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 0.9375rem; }
+  .sponsored-post__step-result {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    opacity: 0.5;
+    margin-left: 0.5rem; }
+  .sponsored-post__step-superscript {
+    float: right;
+    opacity: 0.3; }
+  .sponsored-post__step-superscript-text {
+    margin-left: 0.375rem; }
+  .sponsored-post__clipboard-wrapper {
+    position: relative;
+    margin-top: 0.9375rem; }
+  .sponsored-post__clipboard {
+    background-color: #691F54;
+    width: calc(100% - 195px);
+    padding: 0.875rem 0.75rem;
+    border: 1px solid #903D6D;
+    border-top-left-radius: 0.1875rem;
+    border-bottom-left-radius: 0.1875rem;
+    overflow: hidden; }
+  .sponsored-post__clipboard-text {
+    display: block;
+    opacity: 0.3;
+    white-space: nowrap; }
+    .sponsored-post__clipboard-text--indented {
+      margin-left: 1.75rem; }
+  .sponsored-post__clipboard-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 12.125rem;
+    border-top-right-radius: 0.1875rem;
+    border-bottom-right-radius: 0.1875rem;
+    padding: 0 2.125rem; }
+  .sponsored-post__button {
+    display: block;
+    clear: both;
+    width: 7.8125rem;
+    height: 2.5rem;
+    border-radius: 0.1875rem; }
+    .sponsored-post__button--disabled {
+      background-color: #833559; }
+  .sponsored-post__button-text {
+    color: #fff;
+    opacity: 0.5; }
+    .sponsored-post__button-text--disabled {
+      opacity: 0.3; }
+  .sponsored-post__checkbox {
+    float: left; }
+  .sponsored-post__checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 1.25rem;
+    height: 1.25rem; }
+  .sponsored-post__checkbox-label {
+    display: inline-block;
+    margin: 0 0.625rem 0 0; }
+  .sponsored-post__checkbox-label:before, .sponsored-post__checkbox-input {
+    content: '';
+    background-image: url("../images/icon_checkbox.png");
+    background-position: 20px 0px;
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem; }
+  .sponsored-post__checkbox-input:checked + .sponsored-post__checkbox-label:before {
+    background-position: 0px 0px; }
+
+.icon--arrow {
+  float: right;
+  height: 0.5625rem;
+  margin: 1.625rem 0 1.5rem 0; }
