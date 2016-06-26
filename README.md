@@ -10,4 +10,4 @@ To compile the Sass and run Browsersync run
 gulp default
 ```
 
-Or just check it out live here: http://www.amymccarthy.co/blogfoster/sponsoredpost.html
+Or just check it out live here: http://www.amymccarthy.co/blogfoster/sponsored_post
