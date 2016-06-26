@@ -7,7 +7,7 @@ gulp.task('default', ['watch']);
 
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
-        proxy: "localhost:8080/"
+        proxy: "localhost:8080/sponsored_post.html"
     });
 });
 
