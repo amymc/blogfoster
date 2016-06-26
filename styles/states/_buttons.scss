@@ -1,0 +1,21 @@
+.button {
+  @include button($colour-blush-pink);
+  display: block;
+  clear: both;
+  width: rem(125px);
+  height: rem(40px);
+  border-radius: rem(3px);
+
+  &--disabled {
+    background-color: $colour-tawny-port-purple;
+  }
+
+  &__text {
+    color: $colour-white;
+    opacity: 0.5;
+
+    &--disabled {
+      opacity: 0.3;
+    }
+  }
+}

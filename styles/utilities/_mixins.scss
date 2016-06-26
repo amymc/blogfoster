@@ -1,6 +1,12 @@
-button($colour) {
+@mixin button($colour) {
   background-color: $colour;
   border: none;
   font-size: rem(14px);
   text-transform: uppercase;
+}
+
+@mixin medium-up {
+  @media (min-width: #{rem(680px)}) {
+    @content;
+  }
 }

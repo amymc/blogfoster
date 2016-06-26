@@ -1,0 +1,31 @@
+.clipboard {
+  background-color: $colour-tawny-port-purple;
+  width: calc(100% - #{195px});
+  padding: rem(14px) rem(12px);
+  border: 1px solid $colour-vin-rouge-pink;
+  border-top-left-radius: rem(3px);
+  border-bottom-left-radius: rem(3px);
+  overflow: hidden;
+
+  &__text {
+    display: block;
+    opacity: 0.3;
+    white-space: nowrap;
+
+    &--indented {
+      margin-left: rem(28px);
+    }
+  }
+
+  &__button {
+    @include button($colour-blush-pink);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: rem(194px);
+    border-top-right-radius: rem(3px);
+    border-bottom-right-radius: rem(3px);
+    padding: 0 rem(34px);
+  }
+}

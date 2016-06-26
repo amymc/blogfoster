@@ -1,0 +1,30 @@
+.checkbox {
+  @extend %clearfix;
+  float: left;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: rem(20px);
+    height: rem(20px)
+  }
+
+  &__label{
+     display: inline-block;
+    margin: 0 rem(10px) 0 0;
+  }
+
+  &__label:before, &__input {
+    content: '';
+    background-image: url('../images/icon_checkbox.png');
+    background-position: 20px 0px;
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px)
+  }
+
+  &__input:checked + .checkbox__label:before {
+    background-position: 0px 0px;
+  }
+}

@@ -1,0 +1,29 @@
+.icon {
+  float: left;
+  width: rem(18px);
+  height: rem(18px);
+
+  &--offset {
+    margin-top: rem(10px);
+  }
+}
+
+.icon-arrow {
+  float: right;
+  height: rem(9px);
+  margin: rem(26px) 0 rem(24px) 0;
+}
+
+.icon-step {
+  position: absolute;
+  top: (11px);
+  left: (11px);
+  bottom: 0;
+  width: rem(18px);
+
+  &--stream {
+    top: 0;
+    left: 0;
+    width: rem(40px);
+  }
+}

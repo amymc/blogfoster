@@ -1,38 +1,28 @@
-* {
-  box-sizing: border-box;
-}
-
 .sponsored-post {
   font-family: 'Helvetica Neue', Arial, Sans-serif;
   color: $colour-white;
+  font-size: rem(16px);
+  line-height: rem(18px);
   background: linear-gradient( 135deg, $colour-valentino-purple, $colour-hibiscus-pink);
   padding: rem(24px) rem(30px);
 
   &__title {
+    @extend %title;
     margin: 0 0 rem(26px) 0;
-    font-size: rem(28px);
-    line-height: rem(30px);
-  }
-
-  &__icon {
-    float: left;
-    width: rem(18px);
-    height: rem(18px);
-
-      &--offset {
-      margin-top: rem(10px);
-    }
   }
 
   &__info-wrapper {
     float: left;
-    width: 50%;
     margin-bottom: rem(30px);
   }
 
   &__campaign-image {
-    float: right;
+    float: left;
     margin-bottom: rem(30px);
+
+    @include medium-up {
+      float: right;
+    }
   }
 
   &__info {
@@ -46,14 +36,12 @@
   }
 
   &__info-title {
+    @extend %title;
     display: block;
-    font-size: rem(28px);
-    line-height: rem(30px);
   }
 
   &__info-subtitle {
     display: block;
-    font-size: rem(16px);
     line-height: rem(20px);
     opacity: 0.5;
   }
@@ -77,10 +65,9 @@
   }
 
   &__step {
-    @extend .clearfix;
+    @extend %clearfix;
     display: block;
     clear: both;
-    font-size: rem(16px);
   }
 
   &__step-icon-wrapper {
@@ -88,21 +75,7 @@
     float: left;
     width: rem(40px);
     height: rem(40px);
-    margin:  rem(10px) 0;
-  }
-
-  &__step-icon {
-    position: absolute;
-    top: (11px);
-    left: (11px);
-    bottom: 0;
-    width: rem(18px);
-
-    &--stream {
-      top: 0;
-      left: 0;
-      width: rem(40px);
-    }
+    margin: rem(10px) 0;
   }
 
   &__step-inner-wrapper {
@@ -143,17 +116,6 @@
       }
     }
 
-    &--wide {
-      &:before {
-        height: calc(100% - #{rem(33px)});
-      }
-
-      &:after {
-        left: rem(-61px);
-        width: calc(100% + #{rem(60px)});
-      }
-    }
-
     &--last {
       &:before {
         border: none;
@@ -170,15 +132,12 @@
     display: block;
     font-size: rem(14px);
     line-height: rem(20px);
-    color: $colour-white;
     opacity: 0.3;
   }
 
   &__step-task {
-    @extend .clearfix;
+    @extend %clearfix;
     display: inline-block;
-    font-size: rem(16px);
-    line-height: rem(18px);
   }
 
   &__step-task-item {
@@ -193,8 +152,6 @@
   }
 
   &__step-result {
-    font-size: rem(16px);
-    line-height: rem(18px);
     opacity: 0.5;
     margin-left: rem(8px);
   }
@@ -211,98 +168,5 @@
   &__clipboard-wrapper {
     position: relative;
     margin-top: rem(15px);
-  }
-
-  &__clipboard {
-    background-color: $colour-tawny-port-purple;
-    width: calc(100% - #{195px});
-    padding: rem(14px) rem(12px);
-    border: 1px solid $colour-vin-rouge-pink;
-    border-top-left-radius: rem(3px);
-    border-bottom-left-radius: rem(3px);
-    overflow: hidden;
-  }
-
-  &__clipboard-text {
-    display: block;
-    opacity: 0.3;
-    white-space: nowrap;
-
-    &--indented {
-      margin-left: rem(28px);
-    }
-  }
-
-  &__clipboard-button {
-    @include button($colour-blush-pink);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: rem(194px);
-    border-top-right-radius: rem(3px);
-    border-bottom-right-radius: rem(3px);
-    padding: 0 rem(34px);
-  }
-
-  &__button {
-    @include button($colour-blush-pink);
-    display: block;
-    clear: both;
-    width: rem(125px);
-    height: rem(40px);
-    border-radius: rem(3px);
-
-    &--disabled {
-      background-color: $colour-camelot-purple;
-    }
-  }
-
-  &__button-text {
-    color: $colour-white;
-    opacity: 0.5;
-
-    &--disabled {
-      opacity: 0.3;
-    }
-  }
-
-  &__checkbox {
-    @extend .clearfix;
-    float: left;
-  }
-
-  &__checkbox-input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: rem(20px);
-    height: rem(20px)
-  }
-
-  &__checkbox-label{
-     display: inline-block;
-    margin: 0 rem(10px) 0 0;
-  }
-
-  &__checkbox-label:before, &__checkbox-input {
-    content: '';
-    background-image: url('../images/icon_checkbox.png');
-    background-position: 20px 0px;
-    display: inline-block;
-    width: rem(20px);
-    height: rem(20px)
-  }
-
-  &__checkbox-input:checked + .sponsored-post__checkbox-label:before {
-    background-position: 0px 0px;
-  }
-}
-
-.icon {
-  &--arrow {
-    float: right;
-    height: rem(9px);
-    margin: rem(26px) 0 rem(24px) 0;
   }
 }
