@@ -1,6 +1,6 @@
 # blogfoster
 
-Setup
+**Setup**<br/>
 To start the server in the root directory run
 ```
 python -m SimpleHTTPServer 8080
